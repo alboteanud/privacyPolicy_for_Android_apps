@@ -5,17 +5,14 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 ## Pages
 
 - [All app policies](index.html)
-- [ElectriCode Pro](electricode-pro/index.html): existing policy, copied without substantive changes.
-- [TextPilot](textpilot/index.html): draft, not ready for app store submission.
-- [Learn to read](learn-to-read/index.html): draft, not ready for app store submission.
+- [ElectriCode Pro](electricode-pro/index.html): privacy policy.
+- [TextPilot](textpilot/index.html): privacy policy for SMS messaging and scheduled texts.
+- [Learn to read](learn-to-read/index.html): privacy policy.
+- [Learn to read root URL](privacy-policy.html): same policy at the root-level URL.
 
-The two draft pages do not assert unverified data practices. Confirm each app's
-package ID, developer and privacy contact, data and permissions, external services,
-advertising, purchases, accounts, retention, deletion, and intended audience before
-replacing the draft content with a complete policy. For Learn to read, also confirm
-children's privacy and any microphone or speech processing. Then set the effective
-date, remove draft notices from the page and directory, and update the robots tag.
-The `noindex` tag does not make drafts private: all deployed pages are public.
+The policies describe app behavior and third-party services based on the current app
+implementations. Review and update them if an app's permissions, data use, or service
+providers change. All GitHub Pages content is public.
 
 ## Publish for Free With GitHub Pages
 
@@ -40,10 +37,9 @@ backend, or build step is required. Publishing changes to the selected branch up
 the site automatically. GitHub Pages must still be enabled in the repository settings;
 creating these files locally does not deploy them.
 
-Keep the legacy page available while existing app or store links point to it.
-When changing the ElectriCode Pro policy, update both its new page and the legacy
-page so that they remain consistent. Avoid renaming the repository or app folders
-after distributing their URLs.
+The root-level `privacy-policy.html` URL serves Learn to read. Use each app's
+dedicated policy URL in its store listing. Avoid renaming the repository or app
+folders after distributing their URLs.
 
 ## Add Another App
 
