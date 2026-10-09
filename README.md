@@ -8,7 +8,6 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 - [ElectriCode Pro](electricode-pro/index.html): existing policy, copied without substantive changes.
 - [TextPilot](textpilot/index.html): draft, not ready for app store submission.
 - [Learn to read](learn-to-read/index.html): draft, not ready for app store submission.
-- [Legacy ElectriCode Pro URL](privacy-policy.html): retained for existing links.
 
 The two draft pages do not assert unverified data practices. Confirm each app's
 package ID, developer and privacy contact, data and permissions, external services,
