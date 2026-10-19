@@ -8,6 +8,7 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 - [ElectriCode Pro](electricode-pro/index.html): privacy policy.
 - [TextPilot](textpilot/index.html): privacy policy for SMS messaging and scheduled texts.
 - [Learn to read](learn-to-read/index.html): privacy policy.
+- [PricePeek](pricepeek/index.html): privacy policy for product search and price comparison.
 - [Learn to read root URL](privacy-policy.html): same policy at the root-level URL.
 
 The policies describe app behavior and third-party services based on the current app
@@ -30,6 +31,7 @@ https://USERNAME.github.io/REPOSITORY/
 https://USERNAME.github.io/REPOSITORY/electricode-pro/
 https://USERNAME.github.io/REPOSITORY/textpilot/
 https://USERNAME.github.io/REPOSITORY/learn-to-read/
+https://USERNAME.github.io/REPOSITORY/pricepeek/
 ```
 
 Use each app's direct, finalized policy URL in its store listing. No custom domain,
