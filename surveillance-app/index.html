@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy - SurveillanceApp</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #202124;
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p><strong>App:</strong> SurveillanceApp<br>
+      <strong>Package:</strong> com.turceni.surveillanceapp<br>
+      <strong>Developer:</strong> Anghel Vasile<br>
+      <strong>Last updated:</strong> October 23, 2026</p>
+
+    <h2>In brief</h2>
+    <p>SurveillanceApp is an Android motion-triggered video recording app. It does not require an
+      account. Camera frames are analyzed on your device while monitoring is active, and video
+      clips are saved locally when motion is detected. Audio recording is optional and off by
+      default. The app does not transmit recordings or other app data to the developer, and its
+      current implementation does not include advertising or analytics services.</p>
+
+    <h2>Camera and motion detection</h2>
+    <p>When you start monitoring, the app uses the device's back camera to analyze image frames
+      on-device for motion. This analysis continues while monitoring is active, including while
+      waiting for motion. The app does not save those analysis frames as video. When motion is
+      detected, it starts recording a video clip; recording continues while motion is detected
+      and for a short period afterward. Monitoring runs as a foreground service with an Android
+      notification, and you can stop it from the app.</p>
+
+    <h2>Audio</h2>
+    <p>Audio recording is an optional setting and is off by default. If you turn it on and grant
+      microphone permission, audio is recorded with motion-triggered video clips. If you leave it
+      off or deny microphone permission, clips are recorded without audio. You can change this
+      setting in the app.</p>
+
+    <h2>Recordings and app settings</h2>
+    <p>Video clips are stored on your device in the shared <code>Movies/Surveillance</code> media
+      folder and may be visible to other apps that can access your media, such as gallery or video
+      player apps. Recordings are not uploaded by SurveillanceApp. The app stores settings on the
+      device, including motion sensitivity, clip duration, video quality, audio preference,
+      minimum battery level, and the recording storage limit.</p>
+    <p>You can open or delete clips in the app or manage them through your device's media or
+      gallery app. The app may automatically delete older clips to free storage or enforce the
+      storage limit you set. Because clips are saved in shared device storage, uninstalling the
+      app may not delete them; check the device's gallery or media folder if you want to remove
+      remaining recordings.</p>
+
+    <h2>Permissions and third-party services</h2>
+    <p>The app requests camera permission for motion monitoring and video recording. It requests
+      microphone permission only if you enable audio recording. It may request notification
+      permission so Android can show the foreground monitoring notification, and storage
+      permission on older Android versions to save or manage recordings. It does not request
+      location, contacts, or SMS permissions.</p>
+    <p>The current app implementation has no internet permission and does not include advertising
+      or analytics SDKs. It does not send video, audio, motion analysis, or settings to a
+      developer-operated server. Android and other apps you use to access your recordings are
+      governed by their own terms and privacy practices.</p>
+
+    <h2>Retention and backup</h2>
+    <p>Recordings remain on the device until you delete them or they are removed to free storage
+      or enforce the configured recording limit. App settings can be removed by clearing the
+      app's data or uninstalling it. Android backup behavior depends on your device and backup
+      settings; media in shared storage may be managed separately by Android or your gallery
+      provider.</p>
+
+    <h2>Responsible use</h2>
+    <p>You are responsible for using the app in compliance with applicable laws and respecting
+      the privacy and consent rights of people who may be recorded. Check local requirements
+      before monitoring or recording in any place.</p>
+
+    <h2>Changes and contact</h2>
+    <p>This policy may be updated with the app. For privacy questions or requests, contact the
+      developers at
+      <a href="mailto:vasile.anghel.1957@gmail.com">vasile.anghel.1957@gmail.com</a><br>
+      <a href="mailto:alboteanud@gmail.com">alboteanud@gmail.com</a>.</p>
+    <p><a href="../">All app policies</a></p>
+  </main>
+</body>
+</html>
