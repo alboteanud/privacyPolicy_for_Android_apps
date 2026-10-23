@@ -7,7 +7,7 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 - [All app policies](index.html)
 - [ElectriCode Pro](electricode-pro/index.html): privacy policy.
 - [F-Gas Pro](fgas-pro/index.html): privacy policy for study progress, feedback, and Google Play Billing.
-- [SurveillanceApp](surveillance-app/index.html): privacy policy for on-device motion detection and local video recordings.
+- [Motion Guard](surveillance-app/index.html): privacy policy for on-device motion detection and local video recordings.
 - [TextPilot](textpilot/index.html): privacy policy for SMS messaging and scheduled texts.
 - [Learn to read](learn-to-read/index.html): privacy policy.
 - [PricePeek](pricepeek/index.html): privacy policy for product search and price comparison.
