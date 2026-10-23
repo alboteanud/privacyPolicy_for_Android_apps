@@ -10,6 +10,7 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 - [Motion Guard](surveillance-app/index.html): privacy policy for on-device motion detection and local video recordings.
 - [TextPilot](textpilot/index.html): privacy policy for SMS messaging and scheduled texts.
 - [Learn to read](learn-to-read/index.html): privacy policy.
+- [Learn Math](learn-math/index.html): privacy policy for locally stored child profiles, settings, and learning progress.
 - [PricePeek](pricepeek/index.html): privacy policy for product search and price comparison.
 - [Learn to read root URL](privacy-policy.html): same policy at the root-level URL.
 
@@ -35,6 +36,7 @@ https://USERNAME.github.io/REPOSITORY/fgas-pro/
 https://USERNAME.github.io/REPOSITORY/surveillance-app/
 https://USERNAME.github.io/REPOSITORY/textpilot/
 https://USERNAME.github.io/REPOSITORY/learn-to-read/
+https://USERNAME.github.io/REPOSITORY/learn-math/
 https://USERNAME.github.io/REPOSITORY/pricepeek/
 ```
 
