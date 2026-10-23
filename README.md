@@ -6,6 +6,7 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 
 - [All app policies](index.html)
 - [ElectriCode Pro](electricode-pro/index.html): privacy policy.
+- [F-Gas Pro](fgas-pro/index.html): privacy policy for study progress, feedback, and Google Play Billing.
 - [TextPilot](textpilot/index.html): privacy policy for SMS messaging and scheduled texts.
 - [Learn to read](learn-to-read/index.html): privacy policy.
 - [PricePeek](pricepeek/index.html): privacy policy for product search and price comparison.
@@ -29,6 +30,7 @@ For a project repository, the URLs have this form; replace `USERNAME` and `REPOS
 ```text
 https://USERNAME.github.io/REPOSITORY/
 https://USERNAME.github.io/REPOSITORY/electricode-pro/
+https://USERNAME.github.io/REPOSITORY/fgas-pro/
 https://USERNAME.github.io/REPOSITORY/textpilot/
 https://USERNAME.github.io/REPOSITORY/learn-to-read/
 https://USERNAME.github.io/REPOSITORY/pricepeek/
