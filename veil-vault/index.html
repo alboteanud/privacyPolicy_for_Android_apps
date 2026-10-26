@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy - Veil Vault</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #202124;
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p><strong>App:</strong> Veil Vault<br>
+      <strong>Android package:</strong> com.turceni.encriptionapp<br>
+      <strong>Last updated:</strong> October 26, 2026</p>
+
+    <h2>In brief</h2>
+    <p>Veil Vault is a local private vault for photos, videos, documents, and notes. The current
+      version has no accounts, ads, analytics, or third-party crash reporting, and does not send
+      vault contents or usage data to the developers. It does not request internet permission.</p>
+
+    <h2>Data used by the app</h2>
+    <p>The app stores the following on your device to provide its features:</p>
+    <ul>
+      <li>photos, videos, and documents you choose to import;</li>
+      <li>photos you take with the in-app camera and notes you create;</li>
+      <li>file names, types, sizes, dates added, and favorite selections;</li>
+      <li>encrypted vault settings and key material needed to unlock and recover a vault;</li>
+      <li>local app preferences, such as language and onboarding status.</li>
+    </ul>
+    <p>Vault contents and their metadata index are encrypted in app-private storage. App-level
+      preferences are stored separately and are not all encrypted. The app does not use this
+      information for advertising or profiling, and the developers cannot access your vault.</p>
+
+    <h2>Camera and file access</h2>
+    <p>Camera permission is requested when you open the in-app camera. Captured photos are processed
+      in memory and encrypted into the vault, rather than saved to the device gallery or a plaintext
+      disk cache. The app does not request microphone permission or record audio. You can deny or
+      revoke camera permission in Android settings and still use the other vault features.</p>
+    <p>Imports and backup operations use Android's system file picker. The app accesses the files
+      and destinations you select without requesting broad access to your media library. Importing
+      a file creates an encrypted copy; it does not delete or protect the original outside the vault.</p>
+
+    <h2>Encryption and recovery</h2>
+    <p>The app uses AES-256-GCM to encrypt vault files and metadata. Unlock patterns and recovery
+      codes are used locally to derive keys that protect the vault key. Keep your recovery code
+      private and stored separately. There is no developer-operated account or server-side recovery;
+      the developers cannot unlock your vault or recover its contents if you lose access.</p>
+    <p>Contents are decrypted in memory when needed to display or edit them. The app locks when
+      it goes into the background and requests Android screenshot and recent-app preview protection.
+      These measures do not guarantee protection on a compromised device, against every device's
+      behavior, or against offline guessing of a weak pattern. Encryption does not protect original
+      files or other copies outside the vault.</p>
+
+    <h2>Backups and external providers</h2>
+    <p>The app stores vault data in Android's no-backup storage and is configured to exclude app
+      data from automatic Android cloud backup and device transfer. Device manufacturer behavior
+      may vary.</p>
+    <p>You can manually export an encrypted ZIP backup to a location you choose and restore a
+      backup through the system file picker. A backup contains encrypted vault files, the encrypted
+      index, and protected vault-key material. Anyone with a backup and its unlock pattern or recovery
+      code may be able to access its contents.</p>
+    <p>If you choose a cloud-backed file provider, that provider may receive or store the selected
+      files or encrypted backup under its own privacy policy. This is a user-directed transfer through
+      the provider, not a developer-operated cloud sync service. The app has no built-in cloud sync.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Vault data stays on your device until you delete it. You can delete individual files and notes
+      in the app. Clearing the app's storage in Android settings or uninstalling it removes its local
+      vaults and preferences. Save a usable encrypted backup first if you want to keep your data.</p>
+    <p>Deletion removes local encrypted files but does not guarantee physical erasure from flash
+      storage. It does not remove imported originals, exported backups, or copies held by other apps
+      or providers. Manage and delete those copies separately, including any provider trash or
+      retained backups.</p>
+
+    <h2>Purchases and third-party services</h2>
+    <p>The current version may display plan previews, but it does not implement checkout or Google
+      Play Billing and does not collect payment information. The app does not include advertising,
+      analytics, or crash-reporting services. This policy will be updated if data handling or
+      integrated services change.</p>
+
+    <h2>Children</h2>
+    <p>Veil Vault is not specifically directed at children. The developers do not knowingly collect
+      children's personal information through the app. Content placed in a vault remains subject
+      to the local storage and user-directed backup behavior described above.</p>
+
+    <h2>Changes and contact</h2>
+    <p>This policy may be updated with the app. For privacy questions or requests, contact the
+      developers at
+      <a href="mailto:vasile.anghel.1957@gmail.com">vasile.anghel.1957@gmail.com</a><br>
+      <a href="mailto:alboteanud@gmail.com">alboteanud@gmail.com</a>.</p>
+    <p>If you email the developers, your email address and any information you include are received
+      through the email provider and used to respond to your request. Do not send vault contents,
+      unlock patterns, or recovery codes.</p>
+  </main>
+</body>
+</html>
