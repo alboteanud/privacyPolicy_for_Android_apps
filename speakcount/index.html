@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy - SpeakCount</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #202124;
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p><strong>App:</strong> SpeakCount<br>
+      <strong>Android package:</strong> com.turceni.wordscounter<br>
+      <strong>Developer:</strong> Anghel Vasile<br>
+      <strong>Last updated:</strong> October 30, 2026</p>
+
+    <h2>In brief</h2>
+    <p>SpeakCount counts spoken words on your device and can attribute word counts to detected or
+      enrolled speakers. Speech recognition and speaker matching run locally on your phone using
+      offline Vosk models. The app explicitly removes the Android <code>INTERNET</code> permission,
+      does not send audio, transcripts, voice profiles, or word counts to developer servers, and
+      does not save audio recordings or spoken text transcripts. Optional language model downloads
+      and optional Premium purchases are handled on your device through Google Play.</p>
+
+    <h2>Microphone and on-device audio processing</h2>
+    <p>When you start listening or record a voice sample to enroll a person, SpeakCount captures
+      microphone audio using an Android foreground microphone service. Audio is processed in memory
+      at 16 kHz mono PCM by the on-device speech and speaker recognition models.</p>
+    <ul>
+      <li><strong>No audio recordings stored:</strong> raw audio is analyzed in memory and discarded
+        immediately after processing.</li>
+      <li><strong>No transcripts stored:</strong> when "Show live text" is enabled, the currently
+        heard words are displayed on screen in memory only and are never saved to storage.</li>
+      <li><strong>Consent of people nearby:</strong> because the microphone can pick up nearby
+        voices while listening is active, you are responsible for informing and obtaining any
+        required consent from people around you before starting a listening session.</li>
+    </ul>
+
+    <h2>Data stored on your device</h2>
+    <p>SpeakCount stores the following information in app-private storage on your device (in a local
+      Room database and SharedPreferences) to provide its features:</p>
+    <ul>
+      <li><strong>Word counts and listening time:</strong> session word totals, daily word totals
+        by date, per-speaker word counts, and session listening duration;</li>
+      <li><strong>Speaker profiles (voice embeddings):</strong> speaker names or labels (such as
+        "Person 1" or names you enter), numeric voiceprint vectors (x-vector embeddings) derived
+        from speech, and frame counts used to match utterances to speakers on your device;</li>
+      <li><strong>App settings and entitlement state:</strong> listening preferences (such as skip
+        silence, live text display, auto-stop timer, automatic speaker detection, voice match
+        strictness, and selected speech language) and cached Premium purchase status.</li>
+    </ul>
+    <p>When automatic speaker detection is enabled, the app creates local speaker profiles for new
+      voices and updates automatic voiceprint vectors as additional speech is matched. Enrolled
+      speaker profiles created by recording a voice sample are stored locally in the same database.
+      Voice embeddings are mathematical representations used only for local speaker attribution in
+      the app and should not be used for identity verification or authentication.</p>
+
+    <h2>Permissions and system integration</h2>
+    <ul>
+      <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> required to hear speech, count
+        words, and enroll or match speakers. Listening starts only when initiated by you in the
+        visible app.</li>
+      <li><strong>Foreground service and wake lock
+        (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>,
+        <code>WAKE_LOCK</code>):</strong> used to keep counting active while the screen is locked or
+        another app is open, accompanied by an ongoing notification with a Stop action.</li>
+      <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> used to display the
+        active listening status and current session word count in the system notification area.</li>
+      <li><strong>No Internet permission:</strong> the app removes <code>android.permission.INTERNET</code>
+        from its manifest and cannot make direct network connections.</li>
+    </ul>
+    <p>If you add the home-screen widget or Quick Settings tile, Android displays your current
+      session and daily word counts on that surface.</p>
+
+    <h2>Google Play Billing and language downloads</h2>
+    <p>SpeakCount offers optional Premium subscriptions and a one-time lifetime purchase through
+      Google Play Billing, as well as optional downloadable speech recognition models for additional
+      languages through Google Play Asset Delivery.</p>
+    <p>Because SpeakCount itself has no internet access, billing requests and on-demand language
+      pack downloads are carried out through the Google Play Store app on your device. Google Play
+      processes payment details, subscription management, and asset downloads under Google's own
+      terms and privacy policy. SpeakCount receives only the localized offer details, purchase
+      entitlement status, and installed model files from Google Play on the device.</p>
+
+    <h2>Backups, retention, and deletion</h2>
+    <p>Android cloud backup and device-to-device data extraction are disabled in the app's
+      configuration, and the app's database, preferences, and unpacked speech models are excluded
+      from automatic Android backup.</p>
+    <p>Word counts, speaker profiles, and settings remain on your device until you remove them:</p>
+    <ul>
+      <li>You can reset the current session count at any time in the app.</li>
+      <li>You can rename, merge, re-record, or remove individual speaker profiles in the People
+        section; removing a person deletes their voice profile and per-person word records.</li>
+      <li>You can remove downloaded language packs in the app's Speech language settings.</li>
+      <li>Clearing SpeakCount's storage in Android settings or uninstalling the app permanently
+        deletes all locally stored word counts, history, speaker voice profiles, and settings.</li>
+    </ul>
+
+    <h2>Advertising, analytics, and third-party sharing</h2>
+    <p>SpeakCount does not include advertising, analytics, or third-party crash-reporting SDKs, and
+      does not sell or share your personal data or voice profiles with third parties.</p>
+
+    <h2>Children's privacy</h2>
+    <p>SpeakCount is a general-purpose utility and is not directed at children. The developer does
+      not collect personal information from children or operate any server that receives user data
+      from the app.</p>
+
+    <h2>Changes and contact</h2>
+    <p>This policy may be updated when the app's features or practices change. For privacy
+      questions or requests, contact the developers at
+      <a href="mailto:vasile.anghel.1957@gmail.com">vasile.anghel.1957@gmail.com</a> or
+      <a href="mailto:alboteanud@gmail.com">alboteanud@gmail.com</a>.</p>
+    <p>If you email the developers, your email address and any information you include are received
+      through the email provider and used to respond to your inquiry.</p>
+    <p><a href="../">All app policies</a></p>
+  </main>
+</body>
+</html>

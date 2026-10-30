@@ -12,6 +12,7 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 - [Learn to read](learn-to-read/index.html): privacy policy.
 - [Learn Math](learn-math/index.html): privacy policy for locally stored child profiles, settings, and learning progress.
 - [PricePeek](pricepeek/index.html): privacy policy for product search and price comparison.
+- [SpeakCount](speakcount/index.html): privacy policy for on-device word counting, local speaker voice profiles, and Google Play services.
 - [Veil Vault](veil-vault/index.html): privacy policy for local encrypted files, notes, camera capture, and manual backups.
 - [Learn to read root URL](privacy-policy.html): same policy at the root-level URL.
 
@@ -39,6 +40,7 @@ https://USERNAME.github.io/REPOSITORY/textpilot/
 https://USERNAME.github.io/REPOSITORY/learn-to-read/
 https://USERNAME.github.io/REPOSITORY/learn-math/
 https://USERNAME.github.io/REPOSITORY/pricepeek/
+https://USERNAME.github.io/REPOSITORY/speakcount/
 https://USERNAME.github.io/REPOSITORY/veil-vault/
 ```
 
