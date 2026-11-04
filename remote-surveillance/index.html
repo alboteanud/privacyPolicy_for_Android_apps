@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy - Stillwatch</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #202124;
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p><strong>App:</strong> Stillwatch<br>
+      <strong>Package:</strong> com.turceni.remotesurveillance<br>
+      <strong>Developer:</strong> Anghel Vasile<br>
+      <strong>Last updated:</strong> November 4, 2026</p>
+
+    <h2>In brief</h2>
+    <p>Stillwatch is an Android remote surveillance app that lets you view camera snapshots
+      from another phone signed in to the same account. It uses Google Firebase Authentication
+      for sign-in and Firebase Realtime Database for device discovery, viewing requests, and
+      camera images. Images pass through and are stored in Firebase; this is not a local-only
+      or direct phone-to-phone service. The current app does not stream continuous video,
+      record audio, or include advertising or analytics SDKs.</p>
+
+    <h2>Accounts and sign-in</h2>
+    <p>You can create an account with an email address and password or sign in with Google.
+      Firebase Authentication processes your credentials and maintains an account identifier
+      and authentication records. Google sign-in uses a Google identity token and can provide
+      account information such as your email address and display name. The app uses your
+      account identifier to associate your camera phones and viewing sessions with your
+      account. Passwords are handled by Firebase Authentication, not stored in the camera
+      session database.</p>
+
+    <h2>Camera access and surveillance images</h2>
+    <p>You must start camera standby on the camera phone. Standby runs as a foreground service
+      with an Android notification and listens for viewing requests. The camera is opened for
+      an accepted session with a connected viewer, not during idle standby. While viewing is
+      active, the app checks camera images for scene changes on the device approximately every
+      four seconds. It uploads the first image, changed images, and a periodic refresh of an
+      unchanged scene approximately every 30 seconds. Images are reduced to at most 640 pixels
+      on their longest edge and compressed as JPEGs before upload.</p>
+    <p>Firebase Realtime Database receives the latest uploaded image, its rotation, and its
+      timestamp so the viewer can display it. Each upload replaces the previous image for
+      that session rather than building a cloud image history. Scene comparison is a
+      bandwidth-saving feature, not guaranteed motion detection. A viewing session lasts
+      up to two minutes; you can request another session to continue.</p>
+    <p>Requests from phones signed in to the same account can be accepted automatically while
+      camera standby is running. Stop standby to stop accepting requests and sharing images.
+      Ending the session or leaving the viewer screen stops viewing. Connection loss and
+      cleanup are not instantaneous, so capture or uploads may continue briefly until the
+      connection loss is detected.</p>
+
+    <h2>Device and session information</h2>
+    <p>The app stores camera registrations in Firebase, including a device identifier, device
+      name, online status, and last-seen timestamp. The identifier is derived from Android's
+      app-signing-key, user, and device-scoped ID, with a locally stored random installation
+      identifier as a fallback. The app also stores session identifiers, camera and viewer
+      device identifiers, request and expiry times, session status, and viewer presence
+      timestamps. This information supports device discovery, access control, connection
+      checks, and session expiry.</p>
+
+    <h2>Saved images and local storage</h2>
+    <p>On the viewer phone, choosing <strong>Save image</strong> saves the currently displayed
+      snapshot as a JPEG in the shared <code>Pictures/Stillwatch</code> media folder. The
+      in-app saved-image gallery reads images created by Stillwatch in that folder, not
+      your other photos. Saving an image does not require an additional image download.</p>
+    <p>Saved images remain after a session ends or you sign out, and may remain after
+      uninstalling the app. Delete them using your phone's gallery or media app. Other apps
+      with appropriate media access may be able to read these images, and a gallery or cloud
+      backup provider may back them up according to your settings. The app also stores local
+      preferences and authentication state. Android backup and device transfer depend on your
+      device settings; the app's device-identifier preferences are excluded from its Android
+      backup and transfer rules.</p>
+
+    <h2>Permissions</h2>
+    <p>The app requests camera permission for surveillance snapshots and notification
+      permission for the standby notification. Internet and network-state access support
+      sign-in, device discovery, and image delivery. Foreground-service permissions allow
+      camera standby to run visibly under Android's background-execution rules. You can
+      revoke camera and notification permissions in Android settings; disabling camera
+      access prevents camera operation.</p>
+    <p>The current app does not request microphone, location, contacts, SMS, or broad photo
+      library or storage permissions. It does not record sound.</p>
+
+    <h2>Service providers and security</h2>
+    <p>Google Firebase processes authentication information, device and session records,
+      and uploaded surveillance images to provide the service. Google services may also
+      process technical connection information, such as IP addresses and service logs,
+      under their own privacy practices. Processing locations depend on the Firebase
+      project configuration and Google's infrastructure and may be outside your country.
+      See <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>
+      and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    <p>The supplied database rules restrict access to the matching signed-in account and
+      reject unauthenticated and cross-account requests. Access is account-level, not
+      restricted to a separately approved list of phones: anyone signed in to your account
+      may access its cameras and session data. Protect your account and devices and do not
+      share credentials with people you do not trust.</p>
+    <p>Firebase connections use encrypted transport, but the app does not provide end-to-end
+      encryption between phones. Images are processed in the Firebase backend, and transport
+      encryption does not prevent authorized backend administration. No network or storage
+      system can be guaranteed completely secure.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Normal session cleanup removes the uploaded image and viewer presence record and marks
+      the session ended. Session metadata can remain afterward. If the app or phone stops
+      unexpectedly or cleanup cannot reach Firebase, expired session metadata and the last
+      image may remain in the database. Session expiry limits viewing and uploads but is not
+      an automatic deletion timer. Each new viewing request attempts to delete up to 50
+      expired sessions for the account; an inactive account can retain old records until a
+      later cleanup or administrative deletion.</p>
+    <p>Camera registration records and authentication accounts are not automatically deleted
+      when you stop standby, sign out, clear local app data, or uninstall the app. To request
+      deletion of your Stillwatch authentication account and associated Firebase camera and
+      session data, email either contact address below from the address associated with your
+      account and identify the app as Stillwatch. We may need to verify account ownership;
+      do not send your password. The current app has no in-app account deletion control.</p>
+    <p>Clearing app data or uninstalling removes local app data but does not delete cloud
+      account records or shared gallery images. Delete saved images separately, including
+      any copies held by your gallery backup provider. Requests concerning that provider's
+      copies are subject to its own controls and retention practices.</p>
+
+    <h2>Responsible surveillance and children</h2>
+    <p>Surveillance images may contain identifiable people and sensitive details about
+      private spaces. Use Stillwatch only where you have authority to monitor and comply
+      with applicable notice, consent, workplace, and surveillance laws. Do not use the
+      app for covert or unauthorized monitoring, including monitoring children or other
+      people without the permissions required by law. The app does not distinguish adults
+      from children in captured images. Contact us if you believe personal information,
+      including a child's information, has been processed improperly.</p>
+
+    <h2>Changes and contact</h2>
+    <p>This policy may be updated when the app or its services change. For privacy questions,
+      access or deletion requests, or concerns about surveillance data, contact the
+      developers at
+      <a href="mailto:vasile.anghel.1957@gmail.com">vasile.anghel.1957@gmail.com</a><br>
+      <a href="mailto:alboteanud@gmail.com">alboteanud@gmail.com</a>.</p>
+    <p><a href="../">All app policies</a></p>
+  </main>
+</body>
+</html>
