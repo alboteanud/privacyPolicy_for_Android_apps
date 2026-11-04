@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Delete Your Account - Stillwatch</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #202124;
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2em; }
+    a { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Delete Your Stillwatch Account</h1>
+    <p><strong>App:</strong> Stillwatch<br>
+      <strong>Package:</strong> com.turceni.remotesurveillance<br>
+      <strong>Developer:</strong> Anghel Vasile<br>
+      <strong>Last updated:</strong> November 4, 2026</p>
+
+    <h2>Request account and data deletion</h2>
+    <p>You can request deletion by email without installing or signing in to the app.</p>
+    <ol>
+      <li>Send an email from the email address associated with your Stillwatch account to
+        <a href="mailto:vasile.anghel.1957@gmail.com?subject=Stillwatch%20account%20deletion">vasile.anghel.1957@gmail.com</a>
+        or <a href="mailto:alboteanud@gmail.com?subject=Stillwatch%20account%20deletion">alboteanud@gmail.com</a>.</li>
+      <li>Use the subject <strong>Stillwatch account deletion</strong> and state that you
+        want your Stillwatch account and associated cloud data deleted. If you signed in
+        with Google, use the email address of that Google account.</li>
+      <li>We may ask you to verify account ownership before processing your request.
+        Never send your password, sign-in codes, or surveillance images. If you no longer
+        have access to your account email address, contact us to discuss verification.</li>
+    </ol>
+    <p>Our target is to complete deletion within <strong>30 days after verifying account
+      ownership</strong>. We will confirm completion by email or explain any delay. Before
+      deletion, stop camera standby and sign out on all phones using the account.</p>
+
+    <h2>Data deleted</h2>
+    <p>Account deletion removes your Firebase Authentication account and its associated
+      records from Firebase Realtime Database. This includes:</p>
+    <ul>
+      <li>Your Stillwatch Firebase Authentication account and its associated sign-in profile.</li>
+      <li>Camera registrations, including device identifiers, names, online status, and
+        last-seen timestamps.</li>
+      <li>Viewing-session records, including camera and viewer identifiers, session times,
+        status, and viewer presence records.</li>
+      <li>Any remaining surveillance snapshots stored with those sessions.</li>
+    </ul>
+    <p>Deletion is permanent. It removes access to the Stillwatch account on all connected
+      phones. Deleting your Stillwatch account does not delete your Google account. Signing
+      in again after deletion may create a new Stillwatch account.</p>
+
+    <h2>Data retained or managed separately</h2>
+    <p>There is no additional routine retention period for the account, camera, session,
+      or snapshot records in Firebase Authentication and the app's active Firebase Realtime
+      Database after deletion is completed.
+      Deletion-request correspondence is used to verify ownership, process the request,
+      and send confirmation; it is not intended as a permanent account record.</p>
+    <p>Google may retain service logs or backup copies under its own retention practices;
+      these are not governed by the app's session expiry or the completion target above.
+      See <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>
+      and the <a href="https://policies.google.com/technologies/retention">Google data retention policy</a>.
+      If specific records must be retained to meet a legal obligation, we will explain the
+      applicable reason and retention period when responding to your request, unless
+      prohibited by law.</p>
+    <p>Images saved to <code>Pictures/Stillwatch</code> on any phone are not remotely deleted.
+      Delete them using that phone's gallery or media app, including its trash or recently
+      deleted folder. Delete any cloud-gallery backups separately through the relevant
+      provider. These copies remain until you or the provider removes them. Clearing local
+      app data or uninstalling the app does not replace an account-deletion request and may
+      not remove shared gallery images.</p>
+
+    <p><a href="./">Stillwatch privacy policy</a></p>
+    <p><a href="../">All app policies</a></p>
+  </main>
+</body>
+</html>
