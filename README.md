@@ -14,7 +14,9 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 - [Learn Math](learn-math/index.html): privacy policy for locally stored child profiles, settings, and learning progress.
 - [PricePeek](pricepeek/index.html): privacy policy for product search and price comparison.
 - [SpeakCount](speakcount/index.html): privacy policy for on-device word counting, local speaker voice profiles, and Google Play services.
+- [Einbürgerung Go](einbuergerung-go/index.html): privacy policy for local study data, optional Firebase AI explanations, question feedback, and Google Play purchases.
 - [Veil Vault](veil-vault/index.html): privacy policy for local encrypted files, notes, camera capture, and manual backups.
+- [PatentBar Prep](patentbar-prep/index.html): privacy policy for local study data, optional AI explanations and feedback, Google Play billing, and official-source downloads.
 - [Learn to read root URL](privacy-policy.html): same policy at the root-level URL.
 
 The policies describe app behavior and third-party services based on the current app
@@ -43,7 +45,9 @@ https://USERNAME.github.io/REPOSITORY/learn-to-read/
 https://USERNAME.github.io/REPOSITORY/learn-math/
 https://USERNAME.github.io/REPOSITORY/pricepeek/
 https://USERNAME.github.io/REPOSITORY/speakcount/
+https://USERNAME.github.io/REPOSITORY/einbuergerung-go/
 https://USERNAME.github.io/REPOSITORY/veil-vault/
+https://USERNAME.github.io/REPOSITORY/patentbar-prep/
 ```
 
 Use each app's direct, finalized policy URL in its store listing. No custom domain,
