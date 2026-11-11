@@ -17,6 +17,7 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 - [Einbürgerung Go](einbuergerung-go/index.html): privacy policy for local study data, optional Firebase AI explanations, question feedback, and Google Play purchases.
 - [Veil Vault](veil-vault/index.html): privacy policy for local encrypted files, notes, camera capture, and manual backups.
 - [PatentBar Prep](patentbar-prep/index.html): privacy policy for local study data, optional AI explanations and feedback, Google Play billing, and official-source downloads.
+- [PageVoice](pagevoice/index.html): privacy policy for local document reading, optional HTTPS downloads, offline text-to-speech, reading history, and Google Play Billing.
 - [Learn to read root URL](privacy-policy.html): same policy at the root-level URL.
 
 The policies describe app behavior and third-party services based on the current app
@@ -48,6 +49,7 @@ https://USERNAME.github.io/REPOSITORY/speakcount/
 https://USERNAME.github.io/REPOSITORY/einbuergerung-go/
 https://USERNAME.github.io/REPOSITORY/veil-vault/
 https://USERNAME.github.io/REPOSITORY/patentbar-prep/
+https://USERNAME.github.io/REPOSITORY/pagevoice/
 ```
 
 Use each app's direct, finalized policy URL in its store listing. No custom domain,
