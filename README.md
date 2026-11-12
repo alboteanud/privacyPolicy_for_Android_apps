@@ -13,6 +13,7 @@ Static HTML pages for multiple apps, hosted together with GitHub Pages.
 - [Learn to read](learn-to-read/index.html): privacy policy.
 - [Learn Math](learn-math/index.html): privacy policy for locally stored child profiles, settings, and learning progress.
 - [PricePeek](pricepeek/index.html): privacy policy for product search and price comparison.
+- [Photo Privacy Cleaner](photo-privacy-cleaner/index.html): privacy policy for on-device photo sanitization, user-directed exports, and Google Play Billing.
 - [SpeakCount](speakcount/index.html): privacy policy for on-device word counting, local speaker voice profiles, and Google Play services.
 - [Einbürgerung Go](einbuergerung-go/index.html): privacy policy for local study data, optional Firebase AI explanations, question feedback, and Google Play purchases.
 - [Veil Vault](veil-vault/index.html): privacy policy for local encrypted files, notes, camera capture, and manual backups.
@@ -45,6 +46,7 @@ https://USERNAME.github.io/REPOSITORY/textpilot/
 https://USERNAME.github.io/REPOSITORY/learn-to-read/
 https://USERNAME.github.io/REPOSITORY/learn-math/
 https://USERNAME.github.io/REPOSITORY/pricepeek/
+https://USERNAME.github.io/REPOSITORY/photo-privacy-cleaner/
 https://USERNAME.github.io/REPOSITORY/speakcount/
 https://USERNAME.github.io/REPOSITORY/einbuergerung-go/
 https://USERNAME.github.io/REPOSITORY/veil-vault/
